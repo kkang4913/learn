@@ -1,6 +1,6 @@
 ### 제외 ###
 build.gradle
-gradlew
+gradlew/wrapper
 gradlew.bat
 settings.gradle
 gradle
