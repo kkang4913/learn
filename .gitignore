@@ -1,9 +1,12 @@
 ### 제외 ###
 build.gradle
+gradle/wrapper
 gradlew.bat
 settings.gradle
-gradle/wrapper/
+gradle
+.gradle
 build/
+!gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
 
