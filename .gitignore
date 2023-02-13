@@ -3,7 +3,6 @@ build.gradle
 gradlew.bat
 settings.gradle
 gradle/wrapper/
-programming language
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
