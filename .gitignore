@@ -3,6 +3,7 @@ build.gradle
 gradle/wrapper
 gradlew.bat
 settings.gradle
+gradlew
 gradle
 .gradle
 build/
