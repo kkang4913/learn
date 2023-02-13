@@ -9,4 +9,5 @@
  # 프로그래밍 언어
 - `프로그램을 작성하기 위한 언어체계, 사람이 컴퓨터와 소통하게 하는 요소`
 
-![img.png](img.png)
+
+- ![프로그래밍 언어 순위](https://user-images.githubusercontent.com/100770651/218395900-b6b94313-8d75-4fe6-9f79-a24d1f443b9b.jpg)
