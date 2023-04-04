@@ -19,8 +19,9 @@
       - 네트워크상에 등록되어 클라이언트의 요청을 받아 응답하는 컴퓨터를 호스트 컴퓨터라고 말한다.
     - 경로명
       - 호스트명에서 지정된 컴퓨터상의 리소스의 위치틑 나타낸다
-    - ### HTTP Request Line
-      <img width="490" alt="image" src="https://user-images.githubusercontent.com/100770651/229729545-83cad63d-6f90-43be-a300-48404e086bfd.png">
+
+- ### HTTP Request Line
+  <img width="490" alt="image" src="https://user-images.githubusercontent.com/100770651/229729545-83cad63d-6f90-43be-a300-48404e086bfd.png">
         
 1. HTTP 메소드
      - 요청의 종류 / GET(요청), POST(생성), PUT(변경), DELETE(삭제) 등이 존재
@@ -43,7 +44,33 @@
     - 이용중인 웹 브라우저의 종류와 버전
 
 - ### HTTP Response Line
-        
+   <img width="454" alt="image" src="https://user-images.githubusercontent.com/100770651/229832628-ec7ff96d-f886-4682-baaa-be8b8271498a.png">
+
+1. 상태라인(Status Line)
+    - HTTP 요청과 마찬가지로 HTTP 응답에 대해서도 첫 번째 줄이 가장 중요.
+    - 상태라인 이라고 하며, 구성은 HTTP 버전, 상태코드, 응답 구문으로 나뉜다. <br><br/>
+    <img width="500" alt="image" src="https://user-images.githubusercontent.com/100770651/229833927-2a6bdb97-88a2-4089-a021-190531f5a0e6.png">
+    - HTTP/1.1 : 사용하는 프로토콜의 버전
+    - 200 : 상태 코드로 요청이 성공했는지 실패했는지에 대한 값
+        - 200 - OK
+        - 201 - Created
+        - 302 - Found(HTTP 1.0)
+        - 304 - Not Modified
+        - 401 - Unauthorized
+        - 404 - Not Found
+        - 500 - Internal Server Error
+        - 503 - Service Unavailable
+        - Status code 단위별 의미
+          - 2XX : 성공, 클라이언특 요청한 동작을 수신하여 이해, 승낙했으며 성공적으로 처리
+          - 3XX : 리다이렉션 완료, 클라이언트는 요청을 마치기 위해 추가 동작이 필요함
+          - 4XX : 요청 오류, 클라이언트에 오류가 있음
+          - 5XX : 서버 오류, 서버가 유효한 요청을 명백하게 수행하지 못함.
+    - 메세지 헤더
+      - 상태라인에 이어 나오는 메세지 헤더로 두 번째 줄부터 빈 줄까지,
+      - HTTP 요청의 메세지 헤더와 같은 형식으로, 응답에 관한 부가적인 정보가 담겨있다.
+    - 메세지 본문
+      - 웹 브라우저는 메세지 본문에 있는 HTML을 해석해 화면에 표시,
+      - HTML은 텍스트 형식이므로 우리가 읽을 수 있는 형식으로 메세지 본문에 저장되어 있다.
 - TCP/IP
   - 인터넷의 기본 통신 언어 
   - 데이터가 의도된 목적지에 닿을 수 있도록 보장해주는 통신 규약이다.
