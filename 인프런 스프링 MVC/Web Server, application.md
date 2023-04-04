@@ -49,7 +49,7 @@
 1. 상태라인(Status Line)
     - HTTP 요청과 마찬가지로 HTTP 응답에 대해서도 첫 번째 줄이 가장 중요.
     - 상태라인 이라고 하며, 구성은 HTTP 버전, 상태코드, 응답 구문으로 나뉜다. <br><br/>
-    <img width="500" alt="image" src="https://user-images.githubusercontent.com/100770651/229833927-2a6bdb97-88a2-4089-a021-190531f5a0e6.png">
+    <img width="500" alt="image" src="https://user-images.githubusercontent.com/100770651/229833927-2a6bdb97-88a2-4089-a021-190531f5a0e6.png"> <br><br/>
     - HTTP/1.1 : 사용하는 프로토콜의 버전
     - 200 : 상태 코드로 요청이 성공했는지 실패했는지에 대한 값
         - 200 - OK
