@@ -27,3 +27,6 @@ public class HelloServlet extends HttpServlet {
   - HTTP 응답 정보를 편리하게 제공할 수 있는 HttpServletResponse
   - 개발자는 HTTP 스펙을 편리하게 사용 가능
 
+- ### HTTP 스펙이란?
+  -
+
