@@ -7,7 +7,7 @@
 - ### 사용하기 쉬운 언어
     - 사용하기 쉬운 언어
       - `Java 언어`는 `C언어`에서 출발하였지만 까다로운 부분인(`포인터,다중상속,연산자 중복,etc`)은 삭제하고 꼭 필요한 기능만 포함
-    - [객체 지향 언어](https://github.com/kkang4913/learn/tree/master/Object-oriented)
+    - [객체 지향 언어](https://github.com/kkang4913/learn/tree/master/Object-oriented )
     - `Garbage Collection` 자동 메모리 관리
       - `C언어`에서는 메모리를 할당하고 해지를 해줘야하는데, `Java`는 자동으로 메모리를 관리해준다.
     - 네트워크 분산 환경 지원
