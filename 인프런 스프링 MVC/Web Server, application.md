@@ -5,8 +5,9 @@
   - HTML 문서와 같은 리소스들을 가져올 수 있도록 해주는 프로토콜(약속)
   - URL
     - URI가 상위 개념이지만 혼용해서 사용되고 있음
-    - 스킴(scheme), 호스트명, 경로명으로 구성
-      <img width="500" alt="image" src="https://user-images.githubusercontent.com/100770651/229727756-7f2f3947-844b-466e-bc7f-f66940c20be7.png">
+    - 스킴(scheme), 호스트명, 경로명으로 구성 <br><br/>
+    <img width="500" alt="image" src="https://user-images.githubusercontent.com/100770651/229727756-7f2f3947-844b-466e-bc7f-f66940c20be7.png">
+
     - 스킴(scheme)
       - 리소스를 획득하기 위한 방법 / 웹 애플리케이션 대부분 HTTP 프로토콜을 사용
       - `https: 암호화된 http 통신을 나타내는 스킴`
