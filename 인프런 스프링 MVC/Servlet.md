@@ -19,15 +19,15 @@
   
 - ### 특징  
 ``` Servlet 특징
-@WebServlet(name = "helloServelt", urlPattenrns = "/hello") 
-public class HelloServlet extends HttpServlet {
+  @WebServlet(name = "helloServelt", urlPattenrns = "/hello") 
+  public class HelloServlet extends HttpServlet {
 
     @Override
     protected void service(HttpServeltRequest request, HttpServletResponse response){
       //애플리케이션 로직
     }
 }      
-```
+  ```
   - HTTP 요청 정보를 편리하게 사용할 수 있는 HttpServletRequest
   - HTTP 응답 정보를 편리하게 제공할 수 있는 HttpServletResponse
   - 개발자는 HTTP 스펙을 편리하게 사용 가능
