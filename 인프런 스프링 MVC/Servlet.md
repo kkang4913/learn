@@ -11,7 +11,12 @@
     - 비즈니스 로직 실행 전,후의 과정에서 나오는 비효율적인 부분을 지원 <br><br/>
 
       <img width="300" alt="image" src="https://user-images.githubusercontent.com/100770651/229710356-fb2c1d90-2fc9-4b92-ac01-07c6b72248a1.png">
-
+  
+- ### 서블릿의 등장 배경  
+  ```
+  - 사용자의 요구에 맞춰 동적으로 반응하는 페이지를 만들기 위해 만들어진 것이 바로 서블릿이다.
+  ```
+  
 - ### 특징  
 ``` Servlet 특징
 @WebServlet(name = "helloServelt", urlPattenrns = "/hello") 
@@ -30,3 +35,16 @@ public class HelloServlet extends HttpServlet {
 - ### HTTP 스펙이란?
   - [HTTP 스펙](https://github.com/kkang4913/learn/blob/master/%EC%9D%B8%ED%94%84%EB%9F%B0%20%EC%8A%A4%ED%94%84%EB%A7%81%20MVC/Web%20Server,%20application.md)
 
+- ### 서블릿 HTTP 요청의 흐름
+  <img width="581" alt="image" src="https://user-images.githubusercontent.com/100770651/230127393-e4e116d4-56ce-46e7-80e4-25d0829048ea.png"><br>
+- ###  HTTP 요청이 오면
+  - WAS 는 Request(요청), Response(응답) 객체를 새로 만들어 서블릿 객체 호출
+  - 개발자는 Request 객체에서 HTTP 요청 정보를 편리하게 꺼내 사용
+  - 개발자는 Response 객체에 HTTP 응답 정보를 편리하게 입력
+  - WAS 는 Response 객체에 담겨있는 내용으로 HTTP 응답 정보를 생성
+  - 웹 브라우저에 전송 되고 HTML 를 렌더링하여 화면에 보여준다.
+- ### 서블릿 컨테이너
+  <img width="529" alt="image" src="https://user-images.githubusercontent.com/100770651/230132312-bf2ff3d1-0ceb-4793-b3f5-61b1150bc029.png"><br>
+  - 서블릿을 지원하는 WAS 를 서블릿 컨테이너라고 함.
+  - 서블릿 컨테이너는 서블릿 객체를 생성, 초기화, 호출, 종료하는 생명주기 관리
+  - 
