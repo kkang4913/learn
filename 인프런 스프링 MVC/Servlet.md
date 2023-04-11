@@ -49,7 +49,7 @@
   -  #### 서블릿 컨테이너는 서블릿 객체를 생성, 초기화, 호출, 종료하는 생명주기 관리<br><br>
 
   - ### 서블릿 컨테이너와 생명주기
-    1. 클라이언트에서 요청
+    1. 클라이언트에서 요청 <br>
     <img width="529" alt="image" src="https://user-images.githubusercontent.com/100770651/231062317-5e2665ac-7a34-4e13-9ec9-a6cc73ba2d64.png"><br> 
     <br> 
     2. 최초의 요청시 동작 <br>
