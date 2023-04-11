@@ -54,11 +54,11 @@
     <br> 
     2. 최초의 요청시 동작 <br><br/>
      <img width="500" alt="image" src="https://user-images.githubusercontent.com/100770651/231062680-868aa69d-3241-4e93-a5bf-f76f1a32b64c.png"><br>
-    - 최초로 ```java Resource 의 Request``` 를 응답받은 스프링은 서블릿 컨테이너를 통해 서블릿 객체를 생성
-    - 객체는 ```init()``` 메서드를 통해 생성 및 초기화
-    - ```service()``` 메소드는 어떤 요청이 들어왔는지 체크(```get, post, put, delete, patch```)<br>
-    <br>
-    3. 스레드 (thread) 동작 <br>
+  - 최초로 ```java Resource 의 Request``` 를 응답받은 스프링은 서블릿 컨테이너를 통해 서블릿 객체를 생성
+  - 객체는 ```init()``` 메서드를 통해 생성 및 초기화
+  - ```service()``` 메소드는 어떤 요청이 들어왔는지 체크(```get, post, put, delete, patch```)<br>
+  <br>
+    3. 스레드 (thread) 동작 <br><br/>
     <img width="500" alt="image" src="https://user-images.githubusercontent.com/100770651/231063405-063c4d31-1b74-4427-bf0a-d83e51af6b94.png"><br>
     - ```init()``` 메서드의 경우, 기존의 스레드가 생성해줌
     - ```service()``` 메서드를 호출할 때, 새로운 스레드(스레드1)가 생성됨
