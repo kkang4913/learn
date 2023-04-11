@@ -60,6 +60,7 @@
   <br>
     3. 스레드 (thread) 동작 <br><br/>
     <img width="500" alt="image" src="https://user-images.githubusercontent.com/100770651/231063405-063c4d31-1b74-4427-bf0a-d83e51af6b94.png"><br>
+  
   - ```init()``` 메서드의 경우, 기존의 스레드가 생성해줌
   - ```service()``` 메서드를 호출할 때, 새로운 스레드(스레드1)가 생성됨
   - 스레드는 DB연결도 하고 필요한 데이터를 찾아 HTML에 담아서 응답 등의 기능을 할 것
