@@ -10,5 +10,12 @@
   - 웹 브라우저: HTML 해석<br>
     <img width="450" alt="image" src="https://user-images.githubusercontent.com/100770651/232303500-65d24707-f51f-488f-ab44-b431439e5514.png"><br>
 
+- ### HTTP API
+  - HTML이 아니라 데이타를 전달
+  - 주로 <b>JSON</b> 형식 사용 / [참고](https://developer.mozilla.org/ko/docs/Learn/JavaScript/Objects/JSON)
+  - 다양한 시스템에서 호출<br>
+    <img width="450" alt="image" src="https://user-images.githubusercontent.com/100770651/232305175-e5b8b41d-f04f-4376-b2c6-5f21d5f81deb.png"><br>
+
+
 
     
