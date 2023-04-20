@@ -129,3 +129,11 @@ Cookie: ch-veil-id=a35a06bb-0437-4c9f-833a-02e89c4a6e91
 
 ]
 ```
+
+- ### 서블릿 컨테이너 동작 방식 설명
+  - 내장 톰캣 서버 생성<br>
+    <img width="600" alt="image" src="https://user-images.githubusercontent.com/100770651/233314798-db6982c1-fa68-45c6-8ff6-85ce7c8b9b2b.png"><br>
+    - 스프링 부트를 실행하면 내장 톰캣 서버를 띄어줌 - 내부의 서블릿 컨테이너를 통해 서블릿을 생성 
+    <img width="450" alt="image" src="https://user-images.githubusercontent.com/100770651/233315061-fa7e7a49-c617-4cc7-bb4a-2a8260042140.png">
+      <img width="450" alt="image" src="https://user-images.githubusercontent.com/100770651/233316061-eb0fbac1-9652-4c59-ba82-0d04f9af2100.png">
+
