@@ -3,7 +3,7 @@
 - ### [스프링 부트 스타터 페이지에서 스프링 프로젝트 생성](https://start.spring.io/)
   - 사용 환경(lntelliJ
   -  build.gradle 세팅
-```java
+```
 plugins {
         id 'java'
         id 'war'
