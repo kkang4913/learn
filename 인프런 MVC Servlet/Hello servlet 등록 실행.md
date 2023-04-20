@@ -102,3 +102,30 @@ public class HelloServlet extends HttpServlet {
   response = org.apache.catalina.connector.ResponseFacade@3bedb759
   username = world
 ```
+
+- ### HTTP 요청 메시지 로그로 확인 하는 법
+  - `appilcation.properties`
+```properties
+  logging.level.org.apache.coyote.http11=debug
+```
+  - 서버를 다시 재실행, 요청해보면 서버가 받은 HTTP 요청 메시지를 확인할 수 있다
+```
+Host: localhost:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: ch-veil-id=a35a06bb-0437-4c9f-833a-02e89c4a6e91
+
+]
+```
