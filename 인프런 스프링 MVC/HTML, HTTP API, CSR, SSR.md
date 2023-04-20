@@ -35,7 +35,7 @@
 
 - ### 서버사이드 렌더링, 클라이언트 사이드 렌더링
   - SSR - 서버 사이드 렌더링<br>
-    <img width="500" alt="image" src="https://user-images.githubusercontent.com/100770651/233286147-23ace2dc-6fe1-4f0d-b1cf-062328a06f14.png"><img width="500" alt="image" src="https://user-images.githubusercontent.com/100770651/233291826-116b6c07-61bc-48c2-b2ac-490bb9a657f5.png"><br>
+    <img width="480" alt="image" src="https://user-images.githubusercontent.com/100770651/233286147-23ace2dc-6fe1-4f0d-b1cf-062328a06f14.png"><img width="480" alt="image" src="https://user-images.githubusercontent.com/100770651/233291826-116b6c07-61bc-48c2-b2ac-490bb9a657f5.png"><br>
     - 그림 설명
       - 웹 브라우저에서 <b>주문내역</b>을 <b>서버에 요청</b>
       - 서버는 <b>DB에서 주문 정보 조회</b> 해서 동적으로 HTML을 생성
