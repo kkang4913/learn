@@ -30,5 +30,11 @@ username=kim&age=20
     - 조회 : `request.getAtrribute(name)`
   - 세션 관리 기능
     - `request.getSession(create: true)`
-  - 
+  
+- ### HttpServletRequest - 기본 사용법
+  - hello.servlet.basic.request.RequestHeaderServlet
+  ```java
+  
+
+  ```
 
