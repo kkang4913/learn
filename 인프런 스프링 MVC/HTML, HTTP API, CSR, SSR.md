@@ -35,7 +35,7 @@
 
 - ### 서버사이드 렌더링, 클라이언트 사이드 렌더링
   - SSR - 서버 사이드 렌더링<br>
-    <img width="480" alt="image" src="https://user-images.githubusercontent.com/100770651/233286147-23ace2dc-6fe1-4f0d-b1cf-062328a06f14.png"><img width="480" alt="image" src="https://user-images.githubusercontent.com/100770651/233291826-116b6c07-61bc-48c2-b2ac-490bb9a657f5.png"><br>
+    <img width="450" alt="image" src="https://user-images.githubusercontent.com/100770651/233286147-23ace2dc-6fe1-4f0d-b1cf-062328a06f14.png"><img width="450" alt="image" src="https://user-images.githubusercontent.com/100770651/233291826-116b6c07-61bc-48c2-b2ac-490bb9a657f5.png"><br>
     - 그림 설명
       - 웹 브라우저에서 <b>주문내역</b>을 <b>서버에 요청</b>
       - 서버는 <b>DB에서 주문 정보 조회</b> 해서 동적으로 HTML을 생성
@@ -45,7 +45,7 @@
     - 주로 동적인 화면에 사용, 웹 환경을 마치 앱 처럼 필요한 부분부분을 변경할 수 있음
     - 예) 구글 지도, Gmail, 구글 캘린더
     - 관련기술: React, Vue.js -> 프론트엔드 개발자<br>
-      <img width="600" alt="image" src="https://user-images.githubusercontent.com/100770651/233288908-1da40606-8faf-4713-9964-a708f76c245f.png">
+      <img width="450" alt="image" src="https://user-images.githubusercontent.com/100770651/233288908-1da40606-8faf-4713-9964-a708f76c245f.png"><img width="450" alt="image" src="https://user-images.githubusercontent.com/100770651/233292444-ec1e454e-65b7-44cf-94b5-5f6c0358a423.png">
     - 그림 설명
       - 웹 브라우저에서 HTML을 요청 -> HTML 내용X 자바스크립트 링크 보냄
       - 다시 웹 브라우저에서 자바스크립트를 요청 -> 자바스크립트(클라이언트 로직, HTML 렌더링 코드) 보냄
