@@ -100,5 +100,5 @@ public class HelloServlet extends HttpServlet {
   HelloServlet.service
   request = org.apache.catalina.connector.RequestFacade@2e6593ad
   response = org.apache.catalina.connector.ResponseFacade@3bedb759
-  username = world`
+  username = world
 ```
