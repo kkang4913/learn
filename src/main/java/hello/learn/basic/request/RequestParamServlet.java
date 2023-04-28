@@ -6,10 +6,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Enumeration;
+import java.util.Map;
 
 /**
- * 1.파라미터 전송 기능
+ * 1. 파라미터 전송 기능
  * http://localhost:8080/request-param?username=hello&age=20
+ * <p>
+ * 2. 동일한 파라미터 전송 가능
+ * http://localhost:8080/request-param?username=hello&username=kim&age=20
  */
 @WebServlet(name ="requestParamServlet",urlPatterns = "/request-param")
 public class RequestParamServlet extends HttpServlet {
@@ -34,14 +39,18 @@ public class RequestParamServlet extends HttpServlet {
         System.out.println("[단일 파라미터 조회 끝]");
         System.out.println();
 
-        System.out.println("[이름이 같은 복수 파라미터 조회]");
+        System.out.println("[이름이 같은 복수 파라미터 조회] - 1");
         String[] usernames = request.getParameterValues("username");
         for (String name : usernames) {
             System.out.println("username = " + name);
         }
+        System.out.println("[이름이 같은 복수 파라미터 조회] - 2");
+        String[] ages = request.getParameterValues("age");
+        for (String userage : ages){
+            System.out.println("userage = " + userage);
+        }
         response.getWriter().write("ok");
 
-
-
     }
+
 }
