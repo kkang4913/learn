@@ -14,4 +14,8 @@
 - 특징
   - content-type:`applicatrion/x-www-form-urlencoded`
   - 메시지 바디에 쿼리 파라미터 형식으로 데이터를 전달.`username=hello&age=20`
-- 
+  - 예) 회원 가입, 상품 주문, HTML Form 사용
+- ### 'HTTP message body' 에 데이터를 직접 담아서 요청
+  - HTTP API에서 주로 사용, JSON, XML, TEXT
+  - 데이터 형식은 주로 JSON 사용
+  - POST, PUT, PATCH
