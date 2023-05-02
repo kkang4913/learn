@@ -23,3 +23,15 @@
 </body>
 </html>
 ```
+
+- 실행해보자
+  - `http://localhost:8080/basic/hello-form.html`
+  - 요청 URL : http://localhost:8080/request-param
+  - content-type: `application/x-www-form-urlencoded`
+  - message body: `username=hello&age=20`<br>
+
+  - `application/x-www-form-urlencoded` 형식은 앞서 GET에서 살펴본 쿼리 파라미터 형식과 같음
+  - 따라서 쿼리 파라미터 조회 메서드를 그대로 사용하면 된다.
+  - 클라이언트 입장에서는 두 방식에 차이가 있지만, 서버 입장에서는 둘의 형식이 동일하므로, `request.getParameter()` 로 편리하게 구분없이 조회 가능.
+  - 즉, `request.getParameter()`는 GET URL 쿼리 파리미터와, POST Form 형식 둘 다 지원
+  - 
