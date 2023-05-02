@@ -17,5 +17,106 @@
       <img width="600" alt="image" src="https://user-images.githubusercontent.com/100770651/233611803-6f94c8cd-ea31-4cc3-9347-a76284b5ecd5.png"><br>
 <hr>
 
+- ### GET 쿼리 파라미터
+  - 전달하고 싶은 데이터
+  `username=hello`
+  `age=20`
+  - 메시지 바디 없이, URL의 <b>쿼리 파라미터</b>를 사용해서 데이터를 전달
+  - 예) 검색, 필터, 페이징 등에서 많이 사용하는 방식
+  - 쿼리 파라미터는 URL에 다음과 같이 `?` 를 시작으로 보낼 수 있다. 추가 파라미터는 `&` 로 구분
+  `http://localhost8080/request-param?username=hello&age=20`
+  - 서버에서는 `HttpServletRequest`가 제공하는 메서드를 통해 쿼리 파라미터를 조회할 수 있다.
+  - <b>쿼리 파라미터 조회 메서드</b>
+```java
+  String username = request.getParameter("username"); //단일 파라미터 조회
+  String[] usernames = request.getParameterValues("username"); //복수 파라미터 조회  
+```
+  `Enumeration<String> parameterNames = request.getParameterNames(); //파라미터 이름들  모두 조회`<br>
+  - 요즘 방식으로 변환해서 사용
+```java
+    request.getParameterNames().asIterator()
+          .forEachRemaining(paramName -> System.out.println(paramName + "=" + request.getParameter(paramName)));
+```
+  - RequestParamServlet
+```java
+package hello.servlet.basic.request;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.Enumeration;
+/**
+ * 1. 파라미터 전송 기능
+ * http://localhost:8080/request-param?username=hello&age=20
+ * <p>
+ * 2. 동일한 파라미터 전송 가능
+ * http://localhost:8080/request-param?username=hello&username=kim&age=20
+ */
+@WebServlet(name = "requestParamServlet", urlPatterns = "/request-param")
+public class RequestParamServlet extends HttpServlet {
+ @Override
+ protected void service(HttpServletRequest request, HttpServletResponse 
+resp) throws ServletException, IOException {
+ System.out.println("[전체 파라미터 조회] - start");
+ /*
+ Enumeration<String> parameterNames = request.getParameterNames();
+ while (parameterNames.hasMoreElements()) {
+ String paramName = parameterNames.nextElement();
+ System.out.println(paramName + "=" + 
+request.getParameter(paramName));
+ }
+ */
+ request.getParameterNames().asIterator()
+ .forEachRemaining(paramName -> System.out.println(paramName +
+"=" + request.getParameter(paramName)));
+ System.out.println("[전체 파라미터 조회] - end");
+ System.out.println();
+ System.out.println("[단일 파라미터 조회]");
+ String username = request.getParameter("username");
+ System.out.println("request.getParameter(username) = " + username);
+ String age = request.getParameter("age");
+ System.out.println("request.getParameter(age) = " + age);
+ System.out.println();
+ System.out.println("[이름이 같은 복수 파라미터 조회]");
+ System.out.println("request.getParameterValues(username)");
+ String[] usernames = request.getParameterValues("username");
+ for (String name : usernames) {
+ System.out.println("username=" + name);
+ }
+ resp.getWriter().write("ok");
+ }
+}
+```
 
+  - 실행 - 파라미터 전송
+    - `http://localhost:8080/request-param?username=hello&age=20`
+```결과
+[전체 파라미터 조회] - start
+username=hello
+age=20
+[전체 파라미터 조회] - end
+[단일 파라미터 조회]
+request.getParameter(username) = hello
+request.getParameter(age) = 20
+[이름이 같은 복수 파라미터 조회]
+request.getParameterValues(username)
+username=hello
+```
+  - 실행 - 동일 파라미터 전송
+    - `http://localhost:8080/request-param?username=hello&username=kim&age=20`
+```결과
+[전체 파라미터 조회] - start
+username=hello
+age=20
+[전체 파라미터 조회] - end
+[단일 파라미터 조회]
+request.getParameter(username) = hello
+request.getParameter(age) = 20
+[이름이 같은 복수 파라미터 조회]
+request.getParameterValues(username)
+username=hello
+username=kim
+```
 
