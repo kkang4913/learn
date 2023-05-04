@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%-- 첫 줄은 JSP문서라는 뜻이다. JSP 문서는 이렇게 시작해야 한다. --%>
 <html>
 <head>
  <title>Title</title>
