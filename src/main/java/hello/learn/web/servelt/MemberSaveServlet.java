@@ -50,7 +50,7 @@ public class MemberSaveServlet extends HttpServlet {
     /* 동작 방식 MemberSaveServlet
         1. 파라미터를 조회해서 Member 객체를 만든다.
         2. Member 객체를 MemberRepository를 통해서 저장한다.
-     3. Member 객체를 사용해서 결과 화면용 HTML을 동적으로 만들어서 응답한다.
+        3. Member 객체를 사용해서 결과 화면용 HTML을 동적으로 만들어서 응답한다.
      */
 
 }
