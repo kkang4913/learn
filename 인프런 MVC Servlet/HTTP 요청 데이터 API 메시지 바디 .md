@@ -5,8 +5,9 @@
   - HTTP 메시지 바디의 데이터를 InputStream을 사용해서 직접 읽을 수 있다.
 
 - RequestBodyStringServlet
+
 ```java
-package hello.learn.basic.request;
+package hello.servelt.basic.request;
 
 import org.springframework.util.StreamUtils;
 

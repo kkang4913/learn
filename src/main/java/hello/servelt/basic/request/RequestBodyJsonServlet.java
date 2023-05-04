@@ -1,7 +1,7 @@
-package hello.learn.basic.request;
+package hello.servelt.basic.request;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import hello.learn.basic.HelloData;
+import hello.servelt.basic.HelloData;
 import org.springframework.util.StreamUtils;
 
 import javax.servlet.ServletException;
@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
-import java.util.stream.Stream;
+
 /**
  * http://localhost:8080/request-body-json
  *

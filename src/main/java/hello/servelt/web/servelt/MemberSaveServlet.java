@@ -1,7 +1,7 @@
-package hello.learn.web.servelt;
+package hello.servelt.web.servelt;
 
-import hello.learn.domain.member.Member;
-import hello.learn.domain.member.MemberRepository;
+import hello.servelt.domain.member.Member;
+import hello.servelt.domain.member.MemberRepository;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

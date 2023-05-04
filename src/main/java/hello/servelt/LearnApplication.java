@@ -1,4 +1,4 @@
-package hello.learn;
+package hello.servelt;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

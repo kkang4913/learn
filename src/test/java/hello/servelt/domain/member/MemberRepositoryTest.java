@@ -1,6 +1,5 @@
-package hello.learn.domain.member;
+package hello.servelt.domain.member;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 

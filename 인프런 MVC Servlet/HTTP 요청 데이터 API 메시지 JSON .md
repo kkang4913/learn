@@ -10,8 +10,9 @@
 - <b>JSON 형식 파싱 추가</b>
   - JSON 형식으로 파싱할 수 있게 객체를 하나 생성해보자.
   - `hello.servelt.learn.helloData`
+
 ```java
-package hello.learn.basic;
+package hello.servelt.basic;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -39,12 +40,13 @@ public class HelloData {
  */
 }
 ```
-  - `hello.learn.basic.request.RequestBodyJsonServlet`
+  - `hello.servelt.basic.request.RequestBodyJsonServlet`
+
 ```java
-package hello.learn.basic.request;
+package hello.servelt.basic.request;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import hello.learn.basic.HelloData;
+import hello.servelt.basic.HelloData;
 import org.springframework.util.StreamUtils;
 
 import javax.servlet.ServletException;
@@ -55,7 +57,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
-import java.util.stream.Stream;
+
 /**
  * http://localhost:8080/request-body-json
  *
@@ -64,7 +66,7 @@ import java.util.stream.Stream;
  * message body: {"username": "hello", "age": 20}
  *
  */
-@WebServlet(name = "requestBodyJsonServlet", urlPatterns ="/request-body-json")
+@WebServlet(name = "requestBodyJsonServlet", urlPatterns = "/request-body-json")
 public class RequestBodyJsonServlet extends HttpServlet {
 
     private ObjectMapper objectMapper = new ObjectMapper();

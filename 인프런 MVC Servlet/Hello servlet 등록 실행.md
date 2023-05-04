@@ -46,9 +46,10 @@ plugins {
   - `@ServletComponentScan`<br>
     스프링 부트는 서블릿을 직접 등록해서 사용할 수 있도록 `@ServletComponentScan` 을 지원한다. 다음과 같이 추가하자.<br>
 
-- ### hello.learn.ServletApplication
+- ### hello.servelt.ServletApplication
+
 ```java
-package hello.learn.basic;
+package hello.servelt.basic;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

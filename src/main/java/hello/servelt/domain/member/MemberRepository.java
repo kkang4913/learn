@@ -1,4 +1,4 @@
-package hello.learn.domain.member;
+package hello.servelt.domain.member;
 
 import java.util.*;
 

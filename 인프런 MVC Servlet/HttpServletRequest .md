@@ -33,8 +33,9 @@ username=kim&age=20
   
 - ### HttpServletRequest - 기본 사용법
 - hello.servlet.basic.request.RequestHeaderServlet
+
 ```java
-package hello.learn.basic.request;
+package hello.servelt.basic.request;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

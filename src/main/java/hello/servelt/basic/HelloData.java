@@ -1,4 +1,4 @@
-package hello.learn.basic;
+package hello.servelt.basic;
 
 import lombok.Getter;
 import lombok.Setter;

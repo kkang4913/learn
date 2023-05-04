@@ -1,4 +1,4 @@
-package hello.learn.basic.request;
+package hello.servelt.basic.request;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -6,8 +6,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.Enumeration;
-import java.util.Map;
 
 /**
  * 1. 파라미터 전송 기능

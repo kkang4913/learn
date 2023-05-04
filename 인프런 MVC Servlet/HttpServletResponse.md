@@ -10,8 +10,9 @@
 
 - ### HttpServletResponse - 사용법
  - hello.servlet.basic.response.ResponseHeaderServlet
+
 ```java
-package hello.learn.basic.response;
+package hello.servelt.basic.response;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
