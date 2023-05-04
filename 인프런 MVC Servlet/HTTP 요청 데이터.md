@@ -40,7 +40,7 @@
   - RequestParamServlet
 
 ```java
-package hello.servelt.basic.request;
+package hello.servlet.basic.request;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

@@ -7,7 +7,7 @@
 - RequestBodyStringServlet
 
 ```java
-package hello.servelt.basic.request;
+package hello.servlet.basic.request;
 
 import org.springframework.util.StreamUtils;
 

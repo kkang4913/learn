@@ -9,10 +9,10 @@
   - 결과: `messageBody = {"username": "hello","age":20}`<br>
 - <b>JSON 형식 파싱 추가</b>
   - JSON 형식으로 파싱할 수 있게 객체를 하나 생성해보자.
-  - `hello.servelt.learn.helloData`
+  - `hello.servlet.learn.helloData`
 
 ```java
-package hello.servelt.basic;
+package hello.servlet.basic;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -40,13 +40,13 @@ public class HelloData {
  */
 }
 ```
-  - `hello.servelt.basic.request.RequestBodyJsonServlet`
+  - `hello.servlet.basic.request.RequestBodyJsonServlet`
 
 ```java
-package hello.servelt.basic.request;
+package hello.servlet.basic.request;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import hello.servelt.basic.HelloData;
+import hello.servlet.basic.HelloData;
 import org.springframework.util.StreamUtils;
 
 import javax.servlet.ServletException;

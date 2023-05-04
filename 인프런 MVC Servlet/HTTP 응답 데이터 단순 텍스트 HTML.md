@@ -9,10 +9,10 @@
   - HTTP API - MessageBOdy JSON 응답
 
   - HttpServletResponse - HTML 응답
-    - hello.servelt.web.response.ResponseHtmlServlet
+    - hello.servlet.web.response.ResponseHtmlServlet
 
 ```java
-package hello.servelt.basic.response;
+package hello.servlet.basic.response;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

@@ -1,4 +1,4 @@
-package hello.servelt.domain.member;
+package hello.servlet.domain.member;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;

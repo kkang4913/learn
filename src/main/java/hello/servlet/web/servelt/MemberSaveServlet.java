@@ -1,7 +1,7 @@
-package hello.servelt.web.servelt;
+package hello.servlet.web.servelt;
 
-import hello.servelt.domain.member.Member;
-import hello.servelt.domain.member.MemberRepository;
+import hello.servlet.domain.member.Member;
+import hello.servlet.domain.member.MemberRepository;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
