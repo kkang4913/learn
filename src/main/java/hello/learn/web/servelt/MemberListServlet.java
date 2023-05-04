@@ -12,10 +12,10 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
-@WebServlet(name = "memberListServlet",urlPatterns ="/servlet/members")
+@WebServlet(name = "memberListServlet", urlPatterns = "/servlet/members")
 public class MemberListServlet extends HttpServlet {
 
-private MemberRepository memberRepository = MemberRepository.getInstance();
+    private MemberRepository memberRepository = MemberRepository.getInstance();
 
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -49,7 +49,7 @@ private MemberRepository memberRepository = MemberRepository.getInstance();
         w.write(" </tr>");
         */
 
-        for (Member member : members){
+        for (Member member : members) {
             w.write(" <tr>");
             w.write(" <td>" + member.getId() + "</td>");
             w.write(" <td>" + member.getUsername() + "</td>");
