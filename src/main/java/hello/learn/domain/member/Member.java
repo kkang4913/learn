@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Getter @Setter
+// 회원 도메인 모델
 public class Member {
     private Long id;
     private String username;
